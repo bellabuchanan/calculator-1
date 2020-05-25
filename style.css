@@ -63,6 +63,9 @@ grid-gap: 5px;
 .threespan{
     grid-column: span 3;
 }
+.twospan{
+    grid-column: span 2;
+}
 .clear{
     background-color: rgba(36, 40, 48, 0.8);
 }
