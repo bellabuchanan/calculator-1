@@ -17,4 +17,15 @@ function operate(operator,a,b){
     operator(a,b);
 };
 
-//
+//Calculator Logic
+let inputstring="";
+
+// eventlisteners for button
+const nums = Array.from(document.querySelectorAll(".numinp"));
+nums.forEach(num => {
+    num.addEventListener('click', function(e){
+        inputstring+=e.target.value;
+        const dtext=document.querySelector(".display");
+        dtext.textContent=inputstring;
+    });
+});
