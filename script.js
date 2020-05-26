@@ -48,8 +48,8 @@ equal.addEventListener('click',function(e){
     let temp="";
     for (let i=0;i<inputstring.length;i++){
         let c=inputstring.charAt(i);
-        if (c >= '0' && c <= '9') {
-            // it is a digit
+        if (c >= '0' && c <= '9' || c=='.') {
+            // it is a digit or .
             temp+=c;
         } else {
             // it isn't
